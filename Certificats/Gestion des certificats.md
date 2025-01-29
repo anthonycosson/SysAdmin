@@ -27,4 +27,9 @@ Pour cela il faut récupérer le certificat .crt puis le fichier .key qui a ét�
  `openssl pkcs12 -export -out domain.name.pfx -inkey domain.name.key -in domain.name.crt`
 
 
+## Transformer un .PFX en .p12
+
+Il est possible de changer l'extension simplement en le renommant mais il est aussi possible d'utiliser la commande suivante :
+
+` openssl pkcs12 -export -in domaine.name.pfx -out domaine.name.p12`
 
