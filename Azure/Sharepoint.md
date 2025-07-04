@@ -30,7 +30,7 @@ catch {
 
 # Lancer le job de suppression de versions
 try {
-    $job = New-PnPSiteFileVersionBatchDeleteJob -MajorVersionLimit 1 -MajorWithMinorVersionsLimit 1 -Force
+    New-PnPSiteFileVersionBatchDeleteJob -MajorVersionLimit 1 -MajorWithMinorVersionsLimit 1 -Force
     Write-Host -ForegroundColor Green "✅ Suppression des versions précédentes"
 }
 catch {
