@@ -10,6 +10,7 @@ $sourceSite = "https://XXX.sharepoint.com/sites/ArcheryIntranet"
 $ClientId = "XXXXXXXXXXXXXXXXXXX"
 
 # Connexion
+
 try {
     Connect-PnPOnline -Url $sourceSite -ClientId $ClientId
     Write-Host -ForegroundColor Green "✅ Connexion réussie à SharePoint Online"
