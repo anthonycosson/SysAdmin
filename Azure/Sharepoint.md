@@ -11,14 +11,14 @@ $ClientId = "XXXXXXXXXXXXXXXXXXX"
 
 # Connexion
 
-`try {
+try {
     Connect-PnPOnline -Url $sourceSite -ClientId $ClientId
     Write-Host -ForegroundColor Green "✅ Connexion réussie à SharePoint Online"
 }
 catch {
     Write-Host -ForegroundColor Red "❌ Échec de la connexion : $($_.Exception.Message)"
     exit
-}`
+}
 
 # Modifier la stratégie de rétention des fichiers
 try {
