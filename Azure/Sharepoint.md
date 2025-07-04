@@ -6,7 +6,7 @@ Register-PnPEntraIDAppForInteractiveLogin -ApplicationName "PnP PowerShell" -Sha
 > Conserver le Client ID
 
 # Variable à modifier
-$sourceSite = "https://XXX.sharepoint.com/sites/ArcheryIntranet"
+$sourceSite = "https://XXX.sharepoint.com/sites/XXXX"
 $ClientId = "XXXXXXXXXXXXXXXXXXX"
 
 # Connexion
