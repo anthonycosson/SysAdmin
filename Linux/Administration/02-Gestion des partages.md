@@ -14,7 +14,7 @@ l'UID et le GUID sont ceux du propriétaire et du groupe propriétaire du partag
 Fstab permet de rentre le montage permanent.
 
 * `nano /etc/fstab`
-* //192.168.X.X/partage /mnt/partage  cifs  credentials=/etc/smb-credentials.XXX,iocharset=utf8,uid=XXX,gid=XXX,file_mode=0644,dir_mode=0755,nofail  0  0
+* `//192.168.X.X/partage /mnt/partage  cifs  credentials=/etc/smb-credentials.XXX,iocharset=utf8,uid=XXX,gid=XXX,file_mode=0644,dir_mode=0755,nofail  0  0`
 * `systemctl daemon-reload`
 * `mount -a`
 * `findmnt`
