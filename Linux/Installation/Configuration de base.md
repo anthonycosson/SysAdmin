@@ -6,7 +6,7 @@
 
 ## Installations de quelques outils intéréssants 
 
-`apt install curl htop vim cifs-utils -y`
+`apt install curl htop vim cifs-utils net-tools -y`
 
 ## Permettre le connexion directement depuis le compte route avec mot de passe (Pas forcément recommandé)
 
