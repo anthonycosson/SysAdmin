@@ -20,5 +20,5 @@ Fstab permet de rentre le montage permanent.
 * `findmnt`
 
 Dans cette exemple les crédential sont stocké dans le fichier "/etc/smb-credentials.XXX" qui est sous ce format : 
->username=XXX
+>username=XXX\
 >password=XXX
