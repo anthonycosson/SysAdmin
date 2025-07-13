@@ -5,6 +5,11 @@
 * useradd : Permet de créer ou de mettre à jour les informations par défaut d'un utilisateur.
 * userdel : Permet de supprimer un utilisateurs ainsi que ses fichiers.
 * usermod : Permet de modifier un utilisateur.
-* addgroup : Permet d'ajouter un groupe sur le système.
-* delgroup : Permet de supprilmer un groupe sur le système.
+* groupadd : Permet d'ajouter un groupe sur le système.
+* groupdel : Permet de supprilmer un groupe sur le système.
 * passwd : Permet de changer le mot de passe d'un utilisateur.
+
+
+## Quelques exemples utiles
+
+* Ajouter un utilisateur dans un groupe : 'usermod -aG nomdugroup groupe utilisateur'

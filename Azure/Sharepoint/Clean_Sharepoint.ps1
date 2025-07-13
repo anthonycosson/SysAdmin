@@ -19,7 +19,7 @@ catch {
 # Modifier la stratégie de rétention des fichiers (Adapter les valeurs au besoin)
 
 try {
-    Set-PnPSiteVersionPolicy -EnableAutoExpirationVersionTrim $false -MajorVersions 5 -MajorWithMinorVersions 5 -ExpireVersionsAfterDays 30
+    Set-PnPSiteVersionPolicy -EnableAutoExpirationVersionTrim $false -MajorVersions 30 -MajorWithMinorVersions 30 -ExpireVersionsAfterDays 30
     Write-Host -ForegroundColor Green "✅ Modification des stratégies de rétention"
 }
 catch {
@@ -29,7 +29,7 @@ catch {
 # Lancer le job de suppression de versions pour ne garde qu'une seul version (Adapter les valeurs au besoin)
 
 try {
-    New-PnPSiteFileVersionBatchDeleteJob -MajorVersionLimit 1 -MajorWithMinorVersionsLimit 1 -Force
+    New-PnPSiteFileVersionBatchDeleteJob -MajorVersionLimit 30 -MajorWithMinorVersionsLimit 30 -Force
     Write-Host -ForegroundColor Green "✅ Suppression des versions précédentes"
 }
 catch {

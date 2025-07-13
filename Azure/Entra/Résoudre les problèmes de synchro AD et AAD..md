@@ -15,4 +15,4 @@
 
 * Set-ADObject -Identity "CN=XXX,OU=XXX,DC=XXX,DC=XXX" -Replace @{ 'mS-DS-ConsistencyGUID' = $guid.ToByteArray() }
 
-**Attention** : Si le compte était déjà synchroniser il faudra d'abord le sortir de la synchro Entra Connect, supprimer définitivement le compte cloud .onmicrosoft.com qui aura été créer entre temps et le remettre dans la synchro après avoir fait les étapes précédente.
+**Attention** : Si le compte était déjà synchronisé il faudra d'abord le sortir de la synchro Entra Connect, supprimer définitivement le compte cloud .onmicrosoft.com qui aura été créer entre temps et le remettre dans la synchro après avoir fait les étapes précédente.
