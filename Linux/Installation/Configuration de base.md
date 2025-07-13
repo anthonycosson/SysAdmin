@@ -10,5 +10,5 @@
 
 ## Permettre le connexion directement depuis le compte route avec mot de passe (Pas forcément recommandé)
 
-`sed -i 's/^#\?PermitRootLogin .*/PermitRootLogin yes/' /etc/ssh/sshd_config`
+`sed -i 's/^#\?PermitRootLogin .*/PermitRootLogin yes/' /etc/ssh/sshd_config`\
 `systemctl restart ssh`
